@@ -10,9 +10,10 @@
 (global-set-key (kbd "C-c e") 'eval-last-sexp)
 
 ;; MEOW AUTO DEFUALT INSERT MODE
-;;(setq meow-usecursor-position-hack t)
-;;(add-hook 'find-file-hook 'meow-insert)
+(setq meow-usecursor-position-hack t)
+(add-hook 'find-file-hook 'meow-insert)
 
  
  
  
+																		
