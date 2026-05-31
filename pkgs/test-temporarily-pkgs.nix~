@@ -1,0 +1,18 @@
+#List of packges for test 
+
+
+{pkgs, pkgs-unstable, ...}:
+{
+
+environment.systemPackages = with pkgs-unstable; [
+ pkgs.rofi-network-manager
+ pkgs.mangowc
+
+
+pkgs.emacsPackages.centaur-tabs
+
+
+
+
+];
+

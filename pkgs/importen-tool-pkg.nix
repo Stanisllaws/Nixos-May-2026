@@ -1,0 +1,61 @@
+# My important tool termina, lightweight, etc.
+
+{pkgs, ...}: 
+{ 
+environment.systemPackages = with pkgs; [
+
+# Shell, Terminal, Fonts etc.
+  pkgs.fish
+  pkgs.xterm
+#  alacritty
+  pkgs.nerd-fonts.jetbrains-mono
+
+  pkgs.starship
+  pkgs.htop
+  pkgs.bat
+   #Copy past nvim etc.
+   pkgs.wl-clipboard
+   pkgs.xclip 
+   
+   #File mnagers
+    pkgs.ranger
+    pkgs.yazi
+ 
+
+# Fetch
+ #  pkgs.ipfetch
+  
+#   pkgs.pfetch
+   pkgs.fastfetch
+
+#  Storege utile
+   pkgs.ncdu   #file space scan
+   pkgs.unzip
+   pkgs.zip
+# IF no devel.pkgs uncomet all with one "#" :
+  #git    
+  #wget
+  #pkgs.gcc
+  #pkgs.neovim
+    ##depency for neovim##
+      #pkgs.lua-language-server
+      #pkgs.ripgrep #Nvim
+      #pkgs.fd #Nvim
+      #pkgs.gnumake #Nvim
+      #pkgs.stylua
+
+
+# Shells
+pkgs.zsh
+
+
+
+#Unstable
+
+
+
+
+
+];
+}
+
