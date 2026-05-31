@@ -1,4 +1,4 @@
-./prywatne/
-./backup/
-./hardware-configuration.nix/
-./flake.lock/
+prywatne/
+backup/
+hardware-configuration.nix/
+flake.lock/
