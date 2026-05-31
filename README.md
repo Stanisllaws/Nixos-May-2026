@@ -1,1 +1,1 @@
-My nixos configurations
+My nixos configurations.

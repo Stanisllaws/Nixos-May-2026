@@ -306,14 +306,6 @@ exec "$SHELL"
     exec "$SHELL"
   '')
 
-#LocalSend Password 19.11.25
-(pkgs.writeShellScriptBin "sendpass" ''
-    #!/bin/bash
-    cat  ~/LocalSend-files/localSendPass
-    exec "$SHELL"
-  '')
-
-# Skruty
 
           # Qtile 
 (pkgs.writeShellScriptBin "qtileconf" ''
