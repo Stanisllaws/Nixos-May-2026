@@ -2,3 +2,14 @@ prywatne/
 backup/
 hardware-configuration.nix/
 flake.lock/
+# -*- mode: gitignore; -*-
+*~
+\#*#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.#*
+auto-save-list
+%backup%~
