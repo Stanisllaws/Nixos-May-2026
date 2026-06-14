@@ -1,0 +1,63 @@
+d;; Import
+(load "~/.emacs.d/nix-commands.el")
+(load "~/.emacs.d/etra-programs.el")
+
+
+
+
+;;; -*- lexical-binding: t -*-
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they wn't work right.
+ '(custom-enabled-themes '(modus-vivendi-tinted)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+;; No tool bar
+(tool-bar-mode -1)
+
+;; Font size
+(set-face-attribute 'default nil :height 145)
+
+;;root privilges
+;;(require 'sudo-edit)
+;;(global-set-key (kbd "C-c C-r") 'sudo-edit)
+;; FOR SUDO HELP USE EX. Use C-x C-f and type out /su::/etc/hostname
+
+;; saving recent files edits
+(recentf-mode 1)
+
+;; Saving entry to main buffer
+(setq history-length 25)
+(savehist-mode 1)
+
+;; No sroll bar
+(scroll-bar-mode -1)
+
+
+
+;;Custime keybinds screen splits
+;; Bind C-c h to split horizontally
+(global-set-key (kbd "C-c h") 'split-window-horizontally)
+;; Bind C-c v to split vertically
+(global-set-key (kbd "C-c v") 'split-window-vertically)
+;; Example: Bind C-c s to split and open a specific file
+(defun open-init-file ()
+  (interactive)
+  (split-window-horizontally)
+  (other-window 1)
+  (find-file "~/.emacs.d/init.el"))
+(global-set-key (kbd "C-c s") 'open-init-file)   
+
+
+
+
+
+;; TERMINAL
+(setenv "TERM" "st-direct")

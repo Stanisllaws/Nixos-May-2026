@@ -1,0 +1,11 @@
+#+My Emacs configurations 
+
+** 1. git clone
+git clone [[https://github.com/Stanisllaws/emacs.git]]
+
+** 2. rename file to form emacs to ~/.emacs.d
+
+** 3. M-x load files
+//Alt + x load files //
+** or restart emacs
+

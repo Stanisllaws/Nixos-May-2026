@@ -1,0 +1,11 @@
+** Cradits and Sources
+
+* This package was created by Protesilaos 
+  Linke to the source github page
+  [[https://github.com/protesilaos/buffer-to-pdf]]
+
+** This packge is licenace by GPLv3
+This linke to the source licence
+[[https://github.com/protesilaos/buffer-to-pdf/blob/main/COPYING]]
+
+and also in this folder files called COPYING. 
