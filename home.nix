@@ -18,12 +18,15 @@ imports = [
     ./dotfiles/alacritty/alacritty.nix
     ./dotfiles/starship-conf/starship-declare.nix
    # ./dotfiles/niri/niri.nix
-  # ./dotfiles/emacs.conf/emacs.conf.nix
- ./dotfiles/emacs.conf/emacs.no.conf.nix
+   ./dotfiles/emacs.conf/emacs.conf.nix
+ #./dotfiles/emacs.conf/emacs.no.conf.nix
  ./prywatne/Videos-ed.nix
  ./dotfiles/zsh.conf/zsh.nix
 
-    ];
+    # FOR HYPRLAND
+    ./dotfiles/hyprland/hyprland-conf-lua.nix
+
+];
 
 #Xmobar for xmonad autostart
   home.file.".config/xmobar/xmobarrc".source = ./dotfiles/xmonad.conf/xmobarrc;
