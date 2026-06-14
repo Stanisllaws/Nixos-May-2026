@@ -3,3 +3,4 @@
 [[https://github.com/hyprwm/Hyprland/blob/main/example/hyprland.lua]]
 
 
+I keep the orginal license for Vaxerski
